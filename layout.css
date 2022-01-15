@@ -1,0 +1,1080 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0; padding: 0;
+  }
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0; padding: 0;
+	background-color: black;}
+
+.container {
+    min-height: 600px;    max-height: 1300px;
+    display: flex;
+}
+
+.background{
+	height:1300px;
+}
+
+.watch{
+	position:absolute;
+    top:185%;
+    left: 6%;
+	transform:rotate(-15deg);
+	animation-name:waa;
+	animation-duration: 3s; /*지속시간 */
+	animation-timing-function: ease-out;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;}
+
+	
+@keyframes waa{
+	0%{
+		transform: translateY(0px) rotate(-15deg);
+	}
+
+	70%{
+		transform: translateY(-50px) rotate(-15deg);
+
+	}
+
+	100%{
+		transform: translateY(0px), rotate(-15deg);
+	}
+
+	}
+
+
+.car{
+	position:absolute;
+    top:120px;
+    left: 55%;
+	animation-name:carr;
+	animation-duration: 10s; /*지속시간 */
+	animation-timing-function: ease;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+
+}
+
+
+
+@keyframes carr{
+	0%{
+		top:120px;
+		left: 105%;
+	}
+
+	100%{		top:120px;
+		left: 55%;}
+	}
+
+.Curtain2 {
+	left: -150px;
+	top: 0px;
+	position:absolute;
+
+}
+
+.Curtain3 {
+	right: -150px;
+	top: 0px;
+	position:absolute;
+
+}
+
+
+.Curtain2_1 {
+	left: -450px;
+	top: 0px;
+	position:absolute;
+	animation-name:leftt;
+	animation-duration: 1.3s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+	top: -160%
+
+}
+
+@keyframes leftt{
+	0%{
+		left: 0px;
+		top: 0px;
+		opacity:100%;
+	}
+
+	80%{
+		left: -150px;
+		top: 0px;
+		opacity: 100%;
+	   }
+
+   100%{
+	left: -150px;
+	top: 0px;
+	opacity: 0%;
+   }
+}
+
+.Curtain3_1 {
+	right: -450px;
+	top: 0px;
+	position:absolute;
+	animation-name:rightt;
+	animation-duration: 1.3s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+	top: -160%
+
+}
+
+
+@keyframes rightt{
+	0%{
+		right: 0px;
+		top: 0px;
+		opacity:100%;
+	}
+
+	80%{
+		right: -150px;
+		top: 0px;
+		opacity:100%;
+	   }
+
+   100%{
+	right: -150px;
+	top: 0px;
+	opacity:0%;
+   }
+}
+
+
+.top{
+	width:100%;
+	left: 0;
+	top: -50px;
+	position:absolute;
+}
+
+.bottom{
+	width:100%;
+	left: 0;
+	bottom: -1370px;
+	position:absolute;
+}
+
+.curtainup{
+	width:100%;
+	position: fixed;
+	animation-name:up;
+	animation-duration: 1.3s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+	top: -200%
+	
+}
+
+@keyframes up{
+	0%{
+		top:-10%;
+	}
+
+   100%{
+	top: -200%
+   }
+}
+
+/*_____________________________________________________________________*/
+
+@keyframes appear {
+	0%{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+   100%{
+	   opacity: 100;
+	   transform: scale(1);
+   }
+}
+
+@keyframes appear1 {
+	0%{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	80%{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+   100%{
+	   opacity: 100;
+	   transform: scale(1);
+   }
+}
+
+@keyframes appear2 {
+	0%{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+
+	90%{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+   100%{
+	   opacity: 100;
+	   transform: scale(1);
+   }
+}
+
+@keyframes turn {
+	100%{
+	   transform: rotate(360deg)
+   }
+}
+
+/*_____________________________________________________________________*/
+
+.RecordBG{
+	top: -10px;;
+	left:-10px;
+	height: 700px;
+    width: 700px;
+    margin: 10px;
+    position:fixed;
+
+}
+
+.Record{
+	border-radius:70%;
+    position:fixed;
+	top:-400px;
+	left:-420px;
+	height: 1000px;
+    width: 1000px;
+	animation-name:turn;
+	animation-duration: 10s; /*지속시간 */
+	animation-timing-function: linear;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+.Record:hover{
+	animation-play-state: paused;/*마우스올리면 정지*/
+	}
+
+
+.Player{
+	top: -10px;;
+	left:315px;
+	height: 700px;
+    width: 700px;
+    margin: 10px;
+    position:fixed;
+
+
+	background-color: transparent
+}
+
+/*_____________________________________________________________________*/
+
+.Gal1{
+    height: 750px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:205px;
+    left: 15%;
+	background:url(images/Gal1.png);
+    
+	animation-name:appear;
+	animation-duration: 2s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+.Gal1:hover{
+    height: 750px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:205px;
+    left: 15%;
+	background: url(images/Gal1hover.png);
+    
+	animation-name:appear;
+	animation-duration: 2s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+/*_____________________________________________________________________*/
+
+.Gal2{
+    height: 550px;
+    width: 500px;
+    margin: 10px;
+    position:absolute;
+    top:600px;
+    left: 27%;
+
+
+    
+	animation-name:appear1;
+	animation-duration: 11s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+.Gal2:hover {
+	height: 550px;
+    width: 500px;
+    margin: 10px;
+    position:absolute;
+    top:600px;
+    left:27%;
+
+
+
+    
+	animation-name:appear1;
+	animation-duration: 11s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+/*_____________________________________________________________________*/
+
+.Gal3{
+    height: 700px;
+    width: 600px;
+    margin: 10px;
+    position:absolute;
+    top:1050px;
+    right: 17%;
+
+	background-color: rgb(246, 250, 203);
+	
+	animation-name:appear2;
+	animation-duration: 19s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+.Gal3:hover{
+    height: 700px;
+    width: 600px;
+    margin: 10px;
+    position:absolute;
+    top:1050px;
+    right: 17%;
+
+
+	background-color: rgb(105, 110, 40);
+    
+	animation-name:appear2;
+	animation-duration: 19s; /*지속시간 */
+	animation-timing-function: ease-in;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+}
+
+/*_____________________________________________________________________*/
+
+.Lyrics{
+    color: white;
+    font-size: 40px;
+	font-family: 'Playfair Display', serif;
+	text-shadow:1px 1px 30px rgb(197, 197, 197),5px 5px 0px rgb(68, 68, 68)
+
+    
+}
+
+.Lyrics1{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:110px;
+    left: 700px;
+	animation-name: titleAnimation;
+    animation-timing-function:ease;
+    animation-duration: 3s;
+    
+}
+
+@keyframes titleAnimation {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  50% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+
+.Lyrics2{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:175px;
+    left: 700px;
+	animation-name: titleAnimation;
+    animation-timing-function:ease;
+    animation-duration: 5s;
+}
+.Lyrics2_1{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:225px;
+    left: 670px;
+	animation-name: titleAnimation;
+    animation-timing-function:ease;
+    animation-duration: 6s;
+    
+}
+
+.Lyrics3{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:300px;
+    left: 570px;
+	animation-name: titleAnimation1;
+    animation-timing-function:ease;
+    animation-duration: 9s;
+    
+}
+
+@keyframes titleAnimation1 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  70% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+.Lyrics4{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:440px;
+    left: 500px;
+	animation-name: titleAnimation2;
+    animation-timing-function:ease;
+    animation-duration: 11s;
+    
+}
+
+.Lyrics5{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:500px;
+    left: 480px;
+	animation-name: titleAnimation2;
+    animation-timing-function:ease;
+    animation-duration: 12s;
+    
+}
+
+
+@keyframes titleAnimation2 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  82% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+
+.Lyrics6{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:570px;
+    left: 53%;
+	animation-name: titleAnimation3;
+    animation-timing-function:ease;
+    animation-duration: 13s;
+    
+    
+}
+.Lyrics7{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:630px;
+    left: 53%;
+	animation-name: titleAnimation3;
+    animation-timing-function:ease;
+    animation-duration: 14s;
+    
+    
+}
+
+.Lyrics8{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:690px;
+    left: 53%;
+	animation-name: titleAnimation3;
+    animation-timing-function:ease;
+    animation-duration: 15s;
+    
+    
+}
+
+@keyframes titleAnimation3 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  82% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+.Lyrics9{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:760px;
+    left: 62%;
+	animation-name: titleAnimation4;
+    animation-timing-function:ease;
+    animation-duration: 16s;
+    
+}
+.Lyrics10{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:815px;
+    left: 64%;
+	animation-name: titleAnimation4;
+    animation-timing-function:ease;
+    animation-duration: 16s;
+    
+}
+
+@keyframes titleAnimation4 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  85% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+
+.Lyrics11{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:935px;
+    left: 18%;
+	animation-name: titleAnimation5;
+    animation-timing-function:ease;
+    animation-duration: 19s;
+    
+}
+
+.Lyrics11_1{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:995px;
+    left: 26%;
+	animation-name: titleAnimation5;
+    animation-timing-function:ease;
+    animation-duration: 20.5s;
+    
+}
+
+.Lyrics12{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    position:absolute;
+    top:990px;
+    left: 55%;
+	animation-name: titleAnimation5;
+    animation-timing-function:ease;
+    animation-duration: 21.5s;
+}
+
+.Lyrics13{
+    height: 200px;
+    width: 900px;
+    margin: 10px;
+    position:absolute;
+    top:1050px;
+    left: 65%;
+	animation-name: titleAnimation5;
+    animation-timing-function:ease;
+    animation-duration: 22s;
+    
+}
+
+@keyframes titleAnimation5 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  87% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+.Lyrics14{
+    height: 200px;
+    width: 500px;
+    margin: 10px;
+    position:absolute;
+    top:1150px;
+    left: 25%;
+	animation-name: titleAnimation6;
+    animation-timing-function:ease;
+    animation-duration: 24s;
+    
+}
+
+.Lyrics15{
+    height: 200px;
+    width: 500px;
+    margin: 10px;
+    position:absolute;
+    top:1210px;
+    left: 25%;
+	animation-name: titleAnimation6;
+    animation-timing-function:ease;
+    animation-duration: 25s;
+    
+}
+
+.Lyrics15_1{
+    height: 200px;
+    width: 500px;
+    margin: 10px;
+    position:absolute;
+    top:1310px;
+    left: 22.5%;
+	animation-name: titleAnimation6;
+    animation-timing-function:ease;
+    animation-duration: 27s;
+    
+}
+
+
+
+.Lyrics16{
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    position:absolute;
+    top:1410px;
+    left: 20%;
+	animation-name: titleAnimation6;
+    animation-timing-function:ease;
+    animation-duration: 29s;
+    
+}
+
+@keyframes titleAnimation6 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  89% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+.Lyrics17{
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    position:absolute;
+    top:1590px;
+    left: 22%;
+	animation-name: titleAnimation7;
+    animation-timing-function:ease;
+    animation-duration: 30.5s;
+}
+
+.Lyrics18{
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    position:absolute;
+    top:1655px;
+    left: 24%;
+	animation-name: titleAnimation7;
+    animation-timing-function:ease;
+    animation-duration: 30.75s;
+}
+    
+.Lyrics19{
+    height: 200px;
+    width: 400px;
+    margin: 10px;
+    position:absolute;
+    top:1715px;
+    left: 26%;
+	animation-name: titleAnimation7;
+    animation-timing-function:ease;
+    animation-duration: 31s;
+}
+    
+
+@keyframes titleAnimation7 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  93% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+
+.Lyrics20{
+    height: 200px;
+    width: 600px;
+    margin: 10px;
+    position:absolute;
+    top:1855px;
+    left: 30%;
+	animation-name: titleAnimation8;
+    animation-timing-function:ease;
+    animation-duration: 33s;
+    
+}
+
+
+
+@keyframes titleAnimation8 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  94% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
+/*______________________________________________________________*/
+*{margin: 0;padding:0;}
+
+.box{
+margin: 0px 10px;
+border-radius:50%;
+position:fixed;
+bottom: 0px;
+right:0px;
+opacity: 0.2;
+width:25px;height:25px;
+outline: 1px solid transparent;
+background: rgb(255, 255, 255) ;
+
+animation:animationName 1s 0s infinite ease-in-out alternate;	
+}
+
+.box1{margin: 0px 10px;
+	border-radius:50%;
+	position:fixed;
+	bottom: 0px;
+	right:25px;
+	opacity: 0.2;
+	width:25px;height:25px;
+	outline: 1px solid transparent;
+	background: rgb(255, 255, 255) ;
+	
+	animation:animationName 1s 0s infinite ease-in-out alternate;	
+	animation-delay: 0.2s; background: rgb(255, 255, 255) ;}
+
+.box2{margin: 0px 10px;
+	border-radius:50%;
+	position:fixed;
+	bottom: 0px;
+	right:50px;
+	opacity: 0.2;
+	width:25px;height:25px;
+	outline: 1px solid transparent;
+	background: rgb(255, 255, 255) ;
+	
+	animation:animationName 1s 0s infinite ease-in-out alternate;	
+	animation-delay: 0.3s; background: rgb(255, 255, 255)  ;}
+
+.box3{margin: 0px 10px;
+	border-radius:50%;
+	position:fixed;
+	bottom: 0px;
+	right:75px;
+	opacity: 0.2;
+	width:25px;height:25px;
+	outline: 1px solid transparent;
+	background: rgb(255, 255, 255) ;
+	
+	animation:animationName 1s 0s infinite ease-in-out alternate;	
+	animation-delay: 0.4s; background: rgb(255, 255, 255) ;}
+
+.box4{margin: 0px 10px;
+	border-radius:50%;
+	position:fixed;
+	bottom: 0px;
+	right:100px;
+	opacity: 0.2;
+	width:25px;height:25px;
+	outline: 1px solid transparent;
+	background: rgb(255, 255, 255) ;
+	
+	animation:animationName 1s 0s infinite ease-in-out alternate;	
+	animation-delay: 0.5s; background: rgb(255, 255, 255) ;}
+
+.box:hover{
+animation-play-state: paused;/*마우스올리면 정지*/
+}
+.box1:hover{
+	animation-play-state: paused;/*마우스올리면 정지*/
+	}
+.box2:hover{
+		animation-play-state: paused;/*마우스올리면 정지*/
+		}	
+.box3:hover{
+		animation-play-state: paused;/*마우스올리면 정지*/
+		}
+
+.box4:hover{
+	animation-play-state: paused;/*마우스올리면 정지*/
+	}		
+@keyframes animationName {
+		0%{margin: 0px 2px;}
+		70%{margin: 200px 2px; opacity: 0.7;}
+		100%{margin:180px 2px; opacity: 1;}
+}
+
+
+/*________________________________________________*/
+
+.trumpet{
+	position:fixed;
+	bottom: 11%;
+	left: -90px;
+	width:500px;height:188px;
+	animation:t 3.5s 0.5s infinite ease-in-out alternate;	
+}
+
+@keyframes t {
+	0%{transform: rotate(-10deg);}
+	50%{transform: rotate(40deg);}
+	100%{transform: rotate(-10deg);}
+}
+
+
+.trumpet1{
+	position:fixed;
+	top: 10%;
+	right:-90px;
+	width:500px;height:188px;
+	animation:t1 3.5s 0s infinite ease-in-out alternate;	
+}
+
+@keyframes t1 {
+	0%{transform: rotate(10deg);}
+	50%{transform: rotate(-40deg);}
+	100%{transform: rotate(10deg);}	
+}
+
+/*________________________________________________*/
+.cover{
+	position:absolute;
+	width: 100px;
+	bottom: -1370px;
+	right: 550px;
+}
+
+/*________________________________________________*/
+
+video{
+	width:100%;
+	left: 0;
+	position:fixed;
+}
+
+
+audio{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	background-color: transparent;
+opacity: 50%;}
+
