@@ -9,13 +9,13 @@
 html {
 	width: 100%;
 	height: 100%;
-	margin: 0; padding: 0;
+
   }
 
 body{
 	width: 100%;
 	height: 100%;
-	margin: 0; padding: 0;
+
 	background-color: black;}
 
 .container {
@@ -40,7 +40,8 @@ body{
 	animation-direction: normal;
 	animation-play-state: running;}
 
-	
+.watch:hover{animation-play-state: paused;}
+
 @keyframes waa{
 	0%{
 		transform: translateY(0px) rotate(-15deg);
@@ -59,6 +60,8 @@ body{
 
 
 .car{
+	width: 1000px;
+	height: 526px;
 	position:absolute;
     top:120px;
     left: 55%;
@@ -84,24 +87,64 @@ body{
 		left: 55%;}
 	}
 
+.car:hover{
+	opacity:0;
+	animation-name:carrr;
+	animation-duration: 1s; /*지속시간 */
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-play-state: running;
+
+	}
+	
+
+@keyframes carrr {
+	0%{transform: rotate(0deg);opacity:100;}
+	50%{transform: rotate(5deg);opacity:100;}
+	100%{transform: rotate(-5deg);opacity:0;}
+	}
+	
+
 .Curtain2 {
 	left: -150px;
-	top: 0px;
+	top: -10px;
 	position:absolute;
 
 }
 
+.Curtain2:hover{	
+	animation:c 0.5s 0s 1 ease-in-out alternate;	
+}
+
+@keyframes c {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(-1deg);}
+	100%{transform: rotate(0deg);}
+}
+
+
 .Curtain3 {
 	right: -150px;
-	top: 0px;
+	top: -10px;
 	position:absolute;
 
+}
+
+.Curtain3:hover{	
+	animation:c1 0.5s 0s 1 ease-in-out alternate;	
+}
+
+@keyframes c1 {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(1deg);}
+	100%{transform: rotate(0deg);}
 }
 
 
 .Curtain2_1 {
 	left: -450px;
-	top: 0px;
+	top: -10px;
 	position:absolute;
 	animation-name:leftt;
 	animation-duration: 1.3s; /*지속시간 */
@@ -117,26 +160,26 @@ body{
 @keyframes leftt{
 	0%{
 		left: 0px;
-		top: 0px;
+		top: -10px;
 		opacity:100%;
 	}
 
 	80%{
 		left: -150px;
-		top: 0px;
+		top: -10px;
 		opacity: 100%;
 	   }
 
    100%{
 	left: -150px;
-	top: 0px;
+	top: -10px;
 	opacity: 0%;
    }
 }
 
 .Curtain3_1 {
 	right: -450px;
-	top: 0px;
+	top: -10px;
 	position:absolute;
 	animation-name:rightt;
 	animation-duration: 1.3s; /*지속시간 */
@@ -153,19 +196,19 @@ body{
 @keyframes rightt{
 	0%{
 		right: 0px;
-		top: 0px;
+		top: -10px;
 		opacity:100%;
 	}
 
 	80%{
 		right: -150px;
-		top: 0px;
+		top: -10px;
 		opacity:100%;
 	   }
 
    100%{
 	right: -150px;
-	top: 0px;
+	top: -10px;
 	opacity:0%;
    }
 }
@@ -183,6 +226,7 @@ body{
 	left: 0;
 	bottom: -1370px;
 	position:absolute;
+	margin-bottom: -50px;
 }
 
 .curtainup{
@@ -269,7 +313,6 @@ body{
 	left:-10px;
 	height: 700px;
     width: 700px;
-    margin: 10px;
     position:fixed;
 
 }
@@ -300,19 +343,54 @@ body{
 	left:315px;
 	height: 700px;
     width: 700px;
-    margin: 10px;
     position:fixed;
 
 
 	background-color: transparent
 }
 
+
+.Lucas{
+	height: 707px;
+    width: 400px;
+	transform: scale(1.8);
+	left:43%;
+	top: 45%;
+	opacity: 20%;
+	position:fixed;
+	
+	animation-name:lu;
+	animation-duration: 12s; /*지속시간 */
+	animation-timing-function: ease;
+	animation-delay: 0s; /* 애니메이션 시작하기까지 */
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;}
+
+	
+@keyframes lu{
+	0%{
+		transform: translateY(10px) scale(1.8);
+	}
+
+	50%{
+		transform: translateY(-15px) scale(1.8);
+
+	}
+
+	100%{
+		transform: translateY(10px) scale(1.8);
+	}
+
+	}
+
+
 /*_____________________________________________________________________*/
 
 .Gal1{
     height: 750px;
     width: 300px;
-    margin: 10px;
+
     position:absolute;
     top:205px;
     left: 15%;
@@ -330,7 +408,7 @@ body{
 .Gal1:hover{
     height: 750px;
     width: 300px;
-    margin: 10px;
+
     position:absolute;
     top:205px;
     left: 15%;
@@ -348,12 +426,12 @@ body{
 /*_____________________________________________________________________*/
 
 .Gal2{
-    height: 550px;
-    width: 500px;
-    margin: 10px;
+    height: 660px;
+    width: 600px;
     position:absolute;
     top:600px;
     left: 27%;
+	background:url(images/Gal2.png);
 
 
     
@@ -367,12 +445,12 @@ body{
 }
 
 .Gal2:hover {
-	height: 550px;
-    width: 500px;
-    margin: 10px;
+	height: 660px;
+    width: 600px;
     position:absolute;
     top:600px;
     left:27%;
+	background:url(images/Gal2hover.png);
 
 
 
@@ -389,14 +467,12 @@ body{
 /*_____________________________________________________________________*/
 
 .Gal3{
-    height: 700px;
-    width: 600px;
-    margin: 10px;
+    height: 908px;
+    width: 660px;
     position:absolute;
-    top:1050px;
+    top:1045px;
     right: 17%;
-
-	background-color: rgb(246, 250, 203);
+	background:url(images/Gal3.png);
 	
 	animation-name:appear2;
 	animation-duration: 19s; /*지속시간 */
@@ -408,15 +484,12 @@ body{
 }
 
 .Gal3:hover{
-    height: 700px;
-    width: 600px;
-    margin: 10px;
+    height: 908px;
+    width: 660px;
     position:absolute;
-    top:1050px;
+    top:1045px;
     right: 17%;
-
-
-	background-color: rgb(105, 110, 40);
+	background:url(images/Gal3hover.png);
     
 	animation-name:appear2;
 	animation-duration: 19s; /*지속시간 */
@@ -427,21 +500,21 @@ body{
 	animation-play-state: running;
 }
 
+
 /*_____________________________________________________________________*/
 
 .Lyrics{
     color: white;
     font-size: 40px;
 	font-family: 'Playfair Display', serif;
-	text-shadow:1px 1px 30px rgb(197, 197, 197),5px 5px 0px rgb(68, 68, 68)
+	text-shadow:1px 1px 30px rgb(197, 197, 197),1px 1px 30px rgb(197, 197, 197),5px 5px 0px rgb(109, 109, 109)
 
     
 }
 
 .Lyrics1{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:110px;
     left: 700px;
@@ -474,9 +547,9 @@ body{
 
 
 .Lyrics2{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
+
     position:absolute;
     top:175px;
     left: 700px;
@@ -485,9 +558,8 @@ body{
     animation-duration: 5s;
 }
 .Lyrics2_1{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:225px;
     left: 670px;
@@ -498,13 +570,12 @@ body{
 }
 
 .Lyrics3{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:300px;
     left: 570px;
-	animation-name: titleAnimation1;
+	animation-name: titleAnimation1_1;
     animation-timing-function:ease;
     animation-duration: 9s;
     
@@ -531,10 +602,30 @@ body{
   }
 }
 
+@keyframes titleAnimation1_1 {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+
+  }
+
+  65% {
+	transform: translateY(-50px);
+	opacity: 0;
+
+}
+
+  100% {
+	transform: translateY(0);
+	opacity: 1;
+
+    
+  }
+}
+
 .Lyrics4{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:440px;
     left: 500px;
@@ -545,9 +636,8 @@ body{
 }
 
 .Lyrics5{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:500px;
     left: 480px;
@@ -581,9 +671,8 @@ body{
 
 
 .Lyrics6{
-    height: 200px;
-    width: 900px;
-    margin: 10px;
+    height: 50px;
+    width: 400px;
     position:absolute;
     top:570px;
     left: 53%;
@@ -594,9 +683,8 @@ body{
     
 }
 .Lyrics7{
-    height: 200px;
-    width: 900px;
-    margin: 10px;
+    height: 50px;
+    width: 400px;
     position:absolute;
     top:630px;
     left: 53%;
@@ -608,9 +696,8 @@ body{
 }
 
 .Lyrics8{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:690px;
     left: 53%;
@@ -643,9 +730,8 @@ body{
 }
 
 .Lyrics9{
-    height: 200px;
+    height: 50px;
     width: 300px;
-    margin: 10px;
     position:absolute;
     top:760px;
     left: 62%;
@@ -655,9 +741,8 @@ body{
     
 }
 .Lyrics10{
-    height: 200px;
+    height: 50px;
     width: 300px;
-    margin: 10px;
     position:absolute;
     top:815px;
     left: 64%;
@@ -690,9 +775,8 @@ body{
 
 
 .Lyrics11{
-    height: 200px;
+    height: 50px;
     width: 300px;
-    margin: 10px;
     position:absolute;
     top:935px;
     left: 18%;
@@ -703,9 +787,8 @@ body{
 }
 
 .Lyrics11_1{
-    height: 200px;
+    height: 50px;
     width: 300px;
-    margin: 10px;
     position:absolute;
     top:995px;
     left: 26%;
@@ -716,9 +799,8 @@ body{
 }
 
 .Lyrics12{
-    height: 200px;
+    height: 50px;
     width: 300px;
-    margin: 10px;
     position:absolute;
     top:990px;
     left: 55%;
@@ -728,12 +810,11 @@ body{
 }
 
 .Lyrics13{
-    height: 200px;
+    height: 50px;
     width: 900px;
-    margin: 10px;
     position:absolute;
     top:1050px;
-    left: 65%;
+    left: 62%;
 	animation-name: titleAnimation5;
     animation-timing-function:ease;
     animation-duration: 22s;
@@ -762,11 +843,10 @@ body{
 }
 
 .Lyrics14{
-    height: 200px;
+    height: 50px;
     width: 500px;
-    margin: 10px;
     position:absolute;
-    top:1150px;
+    top:1270px;
     left: 25%;
 	animation-name: titleAnimation6;
     animation-timing-function:ease;
@@ -775,11 +855,10 @@ body{
 }
 
 .Lyrics15{
-    height: 200px;
+    height: 50px;
     width: 500px;
-    margin: 10px;
     position:absolute;
-    top:1210px;
+    top:1330px;
     left: 25%;
 	animation-name: titleAnimation6;
     animation-timing-function:ease;
@@ -788,12 +867,11 @@ body{
 }
 
 .Lyrics15_1{
-    height: 200px;
+    height: 50px;
     width: 500px;
-    margin: 10px;
     position:absolute;
-    top:1310px;
-    left: 22.5%;
+    top:1410px;
+    left: 27.5%;
 	animation-name: titleAnimation6;
     animation-timing-function:ease;
     animation-duration: 27s;
@@ -803,11 +881,10 @@ body{
 
 
 .Lyrics16{
-    height: 200px;
+    height: 100px;
     width: 400px;
-    margin: 10px;
     position:absolute;
-    top:1410px;
+    top:1510px;
     left: 20%;
 	animation-name: titleAnimation6;
     animation-timing-function:ease;
@@ -837,11 +914,10 @@ body{
 }
 
 .Lyrics17{
-    height: 200px;
+    height: 50px;
     width: 400px;
-    margin: 10px;
     position:absolute;
-    top:1590px;
+    top:1690px;
     left: 22%;
 	animation-name: titleAnimation7;
     animation-timing-function:ease;
@@ -849,11 +925,10 @@ body{
 }
 
 .Lyrics18{
-    height: 200px;
+    height: 50px;
     width: 400px;
-    margin: 10px;
     position:absolute;
-    top:1655px;
+    top:1750px;
     left: 24%;
 	animation-name: titleAnimation7;
     animation-timing-function:ease;
@@ -861,11 +936,10 @@ body{
 }
     
 .Lyrics19{
-    height: 200px;
+    height: 50px;
     width: 400px;
-    margin: 10px;
     position:absolute;
-    top:1715px;
+    top:1810px;
     left: 26%;
 	animation-name: titleAnimation7;
     animation-timing-function:ease;
@@ -896,12 +970,11 @@ body{
 
 
 .Lyrics20{
-    height: 200px;
+	height: 50px;
     width: 600px;
-    margin: 10px;
     position:absolute;
-    top:1855px;
-    left: 30%;
+    top:1935px;
+    left: 28%;
 	animation-name: titleAnimation8;
     animation-timing-function:ease;
     animation-duration: 33s;
@@ -917,7 +990,7 @@ body{
 
   }
 
-  94% {
+  93% {
 	transform: translateY(-50px);
 	opacity: 0;
 
@@ -932,8 +1005,6 @@ body{
 }
 
 /*______________________________________________________________*/
-*{margin: 0;padding:0;}
-
 .box{
 margin: 0px 10px;
 border-radius:50%;
@@ -1060,6 +1131,7 @@ animation-play-state: paused;/*마우스올리면 정지*/
 	width: 100px;
 	bottom: -1370px;
 	right: 550px;
+	margin-bottom: -50px;
 }
 
 /*________________________________________________*/
@@ -1077,4 +1149,5 @@ audio{
 	right:0px;
 	background-color: transparent;
 opacity: 50%;}
+
 
