@@ -531,7 +531,7 @@ body{
 
   }
 
-  50% {
+  40% {
 	transform: translateY(-50px);
 	opacity: 0;
 
@@ -672,7 +672,7 @@ body{
 
 .Lyrics6{
     height: 50px;
-    width: 400px;
+    width: 300px;
     position:absolute;
     top:570px;
     left: 53%;
@@ -684,7 +684,7 @@ body{
 }
 .Lyrics7{
     height: 50px;
-    width: 400px;
+    width: 300px;
     position:absolute;
     top:630px;
     left: 53%;
@@ -697,7 +697,7 @@ body{
 
 .Lyrics8{
     height: 50px;
-    width: 900px;
+    width: 400px;
     position:absolute;
     top:690px;
     left: 53%;
