@@ -1151,3 +1151,45 @@ audio{
 opacity: 50%;}
 
 
+
+
+@media screen and (max-width: 1500px) {    
+
+
+	.Lyrics20{
+		height: 50px;
+		width: 400px;
+		position:absolute;
+		top:1935px;
+		left: 28%;
+		animation-name: titleAnimation8;
+		animation-timing-function:ease;
+		animation-duration: 33s;
+		
+	}
+	
+	
+	
+	@keyframes titleAnimation8 {
+		0% {
+		  transform: translateY(-50px);
+		  opacity: 0;
+	
+	  }
+	
+	  93% {
+		transform: translateY(-50px);
+		opacity: 0;
+	
+	}
+	
+	  100% {
+		transform: translateY(0);
+		opacity: 1;
+	
+		
+	  }
+	}
+
+
+}
